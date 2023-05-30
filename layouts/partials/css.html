@@ -20,6 +20,7 @@
 
 <!-- google fonts -->
 {{ if .Site.Params.googlefonts | default true }} <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ .Site.Params.font }}">{{ end }}
+{{ if .Site.Params.customfont | default false }} <link rel="stylesheet" href="{{ .Site.Params.customFontLink }}">{{ end }}
 
 <!-- highlight.js -->
 {{ if .Site.Params.highlight | default false }} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ .Site.Params.highlightStyle | default "default" }}.min.css"> {{ end }}
